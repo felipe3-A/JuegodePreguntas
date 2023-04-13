@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Juego de preguntas</string>
+    <string name="app_questions">PREGUNTAS PARA RESPONDER</string>
+
+    <string name="app_questions1">¿Cual mes tiene 28 dias?</string>
+    <string name="app_questions2">¿Cual es una palabra palindroma?</string>
+    <string name="app_questions3">¿Cual no es un lenguaje de progracion?</string>
+    <string name="app_questions4">¿Año en el que se hundio el Titanic?</string>
+    <string name="app_questions5">Forma corta de Servicio Nacional De Aprendizaje?</string>
+
+    <string name="P1_O1"></string>
+    <string name="P1_O2"></string>
+    <string name="P1_O3"></string>
+    <string name="P1_OC"></string>
+    <string name="enero">Enero</string>
+    <string name="marzo">Marzo</string>
+    <string name="abril">Abril</string>
+    <string name="febrero">Febrero</string>
+
+</resources>
