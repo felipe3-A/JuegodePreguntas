@@ -2,6 +2,7 @@ package com.felipe.juegodepreguntas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -38,7 +39,8 @@ public class MainActivity2 extends AppCompatActivity {
                 switch (k){
                     case R.id.res12:
                         Toast.makeText(MainActivity2.this, "Correcto x2", Toast.LENGTH_SHORT).show();
-
+                        Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
+                        startActivity(intent);
                     case R.id.res22:
                         Toast.makeText(MainActivity2.this, "InCorrecto", Toast.LENGTH_SHORT).show();
 
