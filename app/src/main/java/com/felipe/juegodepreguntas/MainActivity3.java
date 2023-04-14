@@ -34,11 +34,13 @@ RadioButton pre4_3;
                 switch (i){
                     case R.id.res13:
                         Toast.makeText(MainActivity3.this, "Incorrecto", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.res23:
                         Toast.makeText(MainActivity3.this, "¡Incorrecto!", Toast.LENGTH_SHORT).show();
-
+                          break;
                     case R.id.res33:
                         Toast.makeText(MainActivity3.this, "Incorrecto", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.res43:
                         Toast.makeText(MainActivity3.this, "Correcto", Toast.LENGTH_SHORT).show();
                         //Si seleciona esta respuesta lo dirige la siguiente Vista

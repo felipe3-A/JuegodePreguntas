@@ -42,14 +42,16 @@ public class MainActivity extends AppCompatActivity {
                     //El toates un tipo de alert para movil en este caso avisa si la casilla marcada es coorecta o no
                     case R.id.res1:
                         Toast.makeText(MainActivity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.res2:
                         Toast.makeText(MainActivity.this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                         //Si seleciona esta respuesta lo dirige la siguiente Vista
                         Intent intent = new Intent(MainActivity.this,MainActivity2.class);
                         startActivity(intent);
-
+break;
                     case R.id.res3:
                         Toast.makeText(MainActivity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.res4:
                         Toast.makeText(MainActivity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                         break;

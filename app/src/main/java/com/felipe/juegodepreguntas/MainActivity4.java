@@ -2,6 +2,7 @@ package com.felipe.juegodepreguntas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -32,16 +33,18 @@ RadioButton op4_4;
                 switch (i){
                     case R.id.res14:
                         Toast.makeText(MainActivity4.this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-
+                        Intent fin = new Intent(MainActivity4.this,MainActivity5.class);
+                        startActivity(fin);
+                        break;
                     case R.id.res24:
                         Toast.makeText(MainActivity4.this, "¡InCorrecto!", Toast.LENGTH_SHORT).show();
-
+                         break;
                     case R.id.res34:
                         Toast.makeText(MainActivity4.this, "¡InCorrecto!", Toast.LENGTH_SHORT).show();
-
+                        break;
                     case R.id.res44:
                         Toast.makeText(MainActivity4.this, "¡InCorrecto!", Toast.LENGTH_SHORT).show();
-                break;
+                        break;
                 }
             }
         });
