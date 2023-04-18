@@ -50,27 +50,32 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.res1:
                         Toast.makeText(MainActivity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                         mal.start();
+                        puntos=puntos+0;
+                        puntos1=puntos;
                         break;
 
                     case R.id.res2:
                         Toast.makeText(MainActivity.this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this,MainActivity2.class);
-                        startActivity(intent);
                          bien.start();
                         puntos=puntos+3;
-                        puntos1=3;
+                        puntos1=puntos;
 
                     break;
                     case R.id.res3:
                         Toast.makeText(MainActivity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                         mal.start();
+                        puntos=puntos+0;
+                        puntos1=puntos;
                         break;
                     case R.id.res4:
                         Toast.makeText(MainActivity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                         mal.start();
+                        puntos=puntos+0;
+                        puntos1=puntos;
                         break;
                 }
-
+                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                startActivity(intent);
             }
         });
     }

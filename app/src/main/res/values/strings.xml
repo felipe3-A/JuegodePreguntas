@@ -30,5 +30,7 @@
     <string name="muy_bien">Muy bien</string>
     <string name="resultados">Resultados</string>
     <string name="resultado_de_la_primera_pregunta">resultado de la primera pregunta</string>
+    <string name="resultados_individuales">resultados individuales</string>
+    <string name="jugar">Jugar</string>
 
 </resources>
