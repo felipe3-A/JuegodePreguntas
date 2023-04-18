@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
    //Referenciar vista2
+    TextView texto2;
     RadioGroup grupo2;
     RadioButton op1;
     RadioButton op2;
@@ -22,8 +24,12 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         //Metodo
         referenciar();
+
     }
 
+
+
+    public static int resultado1;
     private void referenciar() {
         grupo2=findViewById(R.id.grupopregunta2);
         op1=findViewById(R.id.res12);
@@ -39,6 +45,7 @@ public class MainActivity2 extends AppCompatActivity {
                 switch (k){
                     case R.id.res12:
                         Toast.makeText(MainActivity2.this, "Correcto x2", Toast.LENGTH_SHORT).show();
+                        MainActivity.puntos=MainActivity.puntos+3;
                         Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
                         startActivity(intent);
                         break;
@@ -56,4 +63,5 @@ break;
             }
         });
     }
+
 }

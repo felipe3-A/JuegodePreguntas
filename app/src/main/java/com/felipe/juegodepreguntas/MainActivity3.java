@@ -43,6 +43,8 @@ RadioButton pre4_3;
                         break;
                     case R.id.res43:
                         Toast.makeText(MainActivity3.this, "Correcto", Toast.LENGTH_SHORT).show();
+                        MainActivity.puntos=MainActivity.puntos+3;
+
                         //Si seleciona esta respuesta lo dirige la siguiente Vista
                         Intent intento = new Intent(MainActivity3.this,MainActivity4.class);
                         startActivity(intento);

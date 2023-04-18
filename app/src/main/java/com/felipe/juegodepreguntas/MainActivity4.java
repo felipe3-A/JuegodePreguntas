@@ -33,6 +33,8 @@ RadioButton op4_4;
                 switch (i){
                     case R.id.res14:
                         Toast.makeText(MainActivity4.this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+                        MainActivity.puntos=MainActivity.puntos+3;
+
                         Intent fin = new Intent(MainActivity4.this,MainActivity5.class);
                         startActivity(fin);
                         break;

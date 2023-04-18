@@ -28,5 +28,7 @@
     <string name="_2012">2012</string>
     <string name="_1900">1900</string>
     <string name="muy_bien">Muy bien</string>
+    <string name="resultados">Resultados</string>
+    <string name="resultado_de_la_primera_pregunta">resultado de la primera pregunta</string>
 
 </resources>

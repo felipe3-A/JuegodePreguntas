@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity5 extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class MainActivity5 extends AppCompatActivity {
         setContentView(R.layout.activity_main5);
         referenciar();
     }
-
+public static int puntos;
     private void referenciar() {
         grupo5=findViewById(R.id.grupopregunta5);
         res1_p5=findViewById(R.id.res15);
@@ -41,9 +42,12 @@ public class MainActivity5 extends AppCompatActivity {
                     break;
                         case  R.id.res35:
                         Toast.makeText(MainActivity5.this, "Correcto", Toast.LENGTH_SHORT).show();
-                        Intent fin = new Intent(MainActivity5.this,MainActivity6.class);
+                            MainActivity.puntos=MainActivity.puntos+3;
+                            Intent fin = new Intent(MainActivity5.this,MainActivity6.class);
                         startActivity(fin);
+
                         break;
+
                         case R.id.res45:
                         Toast.makeText(MainActivity5.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                 break;
@@ -51,4 +55,5 @@ public class MainActivity5 extends AppCompatActivity {
             }
         });
     }
+
 }
